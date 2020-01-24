@@ -94,43 +94,47 @@ Route::get('pesan', function () {
 // return $pesan;
 // });
 
+
 //mengakases model dan post(mencari semua model)
-Route::get('testmodel', function() {
-    $query = App\post::all();
-    return $query;
+ Route::get('testmodel/ambil', function() {
+     $query = App\karyawan::all()->take(3);
+     return $query;
     });
 
-    //Mencari model berdasarkan ID:
-Route::get('/testmodell', function() {
-    $query = App\post::find(1);
-    return $query;
-    });
+// //     //Mencari model berdasarkan ID:
+//  Route::get('/testmodell', function() {
+//      $query = App\post::find(1);
+//      return $query;
+//      });
 
-//Mencari model berdasarkan title:
-Route::get('/testmodel3', function() {
-    $query = App\post::where('title', 'like', '%cepat nikah%')->get();
-    return $query;
-    });
+// //Mencari model berdasarkan title:
+// Route::get('/testmodel3', function() {
+//     $query = App\post::where('title', 'like', '%cepat nikah%')->get();
+//     return $query;
+//     });
 
-    // Mengubah record,(hapus semua isi Function):
-Route::get('/testmodel4', function() {
-    $post = App\post::find(1);
-    $post->title = "cari keluarga sakinah";
-    $post->save();
-    return $post;
-    });
-// Menghapus record,(hapus semua isi Function):
-Route::get('/testmodel5', function() {
-    $post = App\post::find(1);
-    $post->delete();
-    return $query; // check data di database
-    });
-// Menambah record()
-Route::get('/testmodel5', function() {
-$post = new App\Post;
-$post->title = "7 Amalan Pembuka Jodoh";
-$post->content = "shalat malam, sedekah, puasa sunah, silaturahmi, senyum, doa, tobat";
-$post->save();
-return $post;
-});
+//     // Mengubah record,(hapus semua isi Function):
+// Route::get('/testmodel4', function() {
+//     $post = App\post::find(1);
+//     $post->title = "cari keluarga sakinah";
+//     $post->save();
+//     return $post;
+//     });
+// // Menghapus record,(hapus semua isi Function):
+// Route::get('/testmodel5', function() {
+//     $post = App\post::find(1);
+//     $post->delete();
+//     return $query; // check data di database
+//     });
+// // Menambah record()
+// Route::get('/testmodel5', function() {
+// $post = new App\Post;
+// $post->title = "7 Amalan Pembuka Jodoh";
+// $post->content = "shalat malam, sedekah, puasa sunah, silaturahmi, senyum, doa, tobat";
+// $post->save();
+// return $post;
+// });
 // check record baru di database
+
+//mengakases model dan post(mencari semua model)
+

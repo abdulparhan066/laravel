@@ -17,7 +17,7 @@ class SiswaSeeder extends Seeder
             ['nis'=>'0221223', 'nama'=>'abdul', 'jenis_kelamin'=>'laki-laki', 'tanggal'=>'2020-01-24', 'alamat'=>'vietnam', 'umur'=>52
         ],
         ['nis'=>'077632', 'nama'=>'pelangidimatamu', 'jenis_kelamin'=>'prempuan', 'tanggal'=>'2020-02-22', 'alamat'=>'bojong', 'umur'=>30
-        ],
+        ]
 
 
         ];
