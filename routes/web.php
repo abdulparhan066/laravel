@@ -134,11 +134,6 @@ Route::get('pesan', function () {
 //mengakases model dan post(mencari semua model)
 
 
-// membuat controller
-//$route::get['default_controller'] = 'latihanController';
-
-Route::get('/latihan', 'latihanController@pusing ');
-
 // Route::get('tambah/{a?}/{b?}', function ($a = null, $b = null) {
 // }:
 
@@ -148,3 +143,6 @@ Route::get('data-0', 'latihanController@pusing');
 Route::get('data-1', 'latihanController@loop');
 
 Route::get('data-2', 'latihanController@karwan');
+// route costumer
+
+Route::get('/tambah/{id}/{nis}/{name}/{kelas}/{jumlah}', 'tabunganController@store');

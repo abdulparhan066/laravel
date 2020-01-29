@@ -72,8 +72,27 @@ public function loop()
     //latihan 05
     public function karwan()
     {
-        $data[
-            ['']
-        ];
-    }
+    $data = [
+        ['name' =>'ahmad', 'agama' =>'islam', 'alamat' =>'bandung', 'jenis_kelamin' =>'laki-laki',
+            'jabatan' =>'menejer', 'jam_kerja' =>400000],
+        ['name' =>'parhan', 'agama' =>'islam', 'alamat' =>'bandung gelap', 'jenis_kelamin' =>'laki-laki',
+            'jabatan' =>'skertaris', 'jam_kerja' =>350000],
+        ['name' =>'kawil', 'agama' =>'islam', 'alamat' =>'bandung panik', 'jenis_kelamin' =>'laki-laki',
+            'jabatan' =>'staf', 'jam_kerja' =>250000],
+    ];
+
+//     foreach($data as $val => $key){
+//         if ($key['uang_jajan'] >= 50000){
+//             $tabungan = $key['uang_jajan'] * 25/100;
+//             $sisa = $key['uang_jajan'] - $tabungan;
+//         }else if ($key['uang_jajan'] >= 25000) {
+//
+//             $sisa = $key['uang_jajan'] - $tabungan;
+//         }else if ($key['uang_jajan'] >= 10000) {
+//             $tabungan = $key['uang_jajan'] * 10/100;
+//             $sisa = $key['uang_jajan'] - $tabungan;
+//         }
+
+//     }
+ }
 }

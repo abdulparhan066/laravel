@@ -15,6 +15,10 @@ class CreateTabunganTable extends Migration
     {
         Schema::create('tabungan', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('nis')->unique();
+            $table->string('name');
+            $table->string('kelas');
+            $table->string('jumlah');
             $table->timestamps();
         });
     }

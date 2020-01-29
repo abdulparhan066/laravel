@@ -5,7 +5,7 @@
 use App\Model;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(tabungan::class, function (Faker $faker) {
     return [
         "niss" => $faker ->unique ->rendomNumber,
         "nama" => $faker ->name,
