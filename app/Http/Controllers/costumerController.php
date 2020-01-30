@@ -18,17 +18,16 @@ class costumerController extends Controller
         return $costumer;
     }
 
-    public function store()
+    public function store($kode_costumer, $name, $email, $country, $city, $address, $contact_number)
     {
-        $costumer = new Costumer($kode_costumer=null ,$name=null ,$email=null, $country=null, $city=null,
-            $address=null, $contact_number=null);
-        $costumer->kode_costumer=$kode_costumer;
-        $costumer->name=$name;
-        $costumer->email=$email;
-        $costumer->country=$country;
-        $costumer->city='bandung';
-        $costumer->address='kamil';
-        $costumer->contact_number='008882211';
+        $costumer = new CostumerCostumer();
+        $costumer->$kode_costumer;
+        $costumer->$name;
+        $costumer->$email;
+        $costumer->$country;
+        $costumer->$city;
+        $costumer->$address;
+        $costumer->$contact_number;
         $costumer->save();
         return $costumer;
 
