@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class praktikController extends Controller
 {
     public function pass() {
-        $data = "REZA OKTA";
+        $tabungan = $data;
         return view("latihan", compact('data'));
     }
 
@@ -20,4 +20,6 @@ class praktikController extends Controller
         return view("latihan", ('data' -> $siswaa));
 
     }
+
+
 }

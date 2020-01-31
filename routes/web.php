@@ -144,10 +144,16 @@ Route::get('data-1', 'latihanController@loop');
 
 Route::get('data-2', 'latihanController@karwan');
 // route costumer
-
+Route::get('data-3', 'costumerController@store');
 Route::get('/tambah/{id}/{nis}/{name}/{kelas}/{jumlah}', 'tabunganController@store');
 
 // view / blade latiha1 (ROUTE PASSING
 Route::get('pass', 'PassingController@pass');
 Route::get('pass1', 'PassingController@pass1');
 Route::get('pass2', 'PassingController@pass1');
+
+//tabungan Route
+Route::get('tabung', 'tabunganController@store');
+Route::get('tabungan', 'tabunganController@run');
+
+//

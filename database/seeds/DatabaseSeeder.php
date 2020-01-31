@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             //factory(App\tabungan::class,) ->create();
 
             // $this->call(UsersTableSeeder::class);
+            $this->call(MotorSeeder::class);
     }
 
 

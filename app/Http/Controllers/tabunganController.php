@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\tabungan;
 class tabunganController extends Controller
 {
     public function index()
@@ -17,13 +17,13 @@ class tabunganController extends Controller
         $tabungan = \App\tabungan::find($id);
         return $tabungan;
     }
-    public function store($id,$nis=null, $name=null, $kelas=null, $jumlah=null)
+    public function store($id,$nis, $name, $kelas, $jumlah)
     {
-        $tabungan = new tabungan();
-        $tabungan ->nis = "$nis";
-        $tabungan ->name = "$name";
-        $tabungan ->kelas = "$kelas";
-        $tabungan ->jumlah = "$jumlah";
+        $tabungan = new Tabungan();
+        $tabungan ->nis = $nis;
+        $tabungan ->name = $name;
+        $tabungan ->kelas = $kelas;
+        $tabungan ->jumlah = $jumlah;
         $tabungan ->save();
         return $tabungan;
     }

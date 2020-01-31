@@ -7,9 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    @foreach ($data as $val)
-    Nama : {['$value'->nama]} <br>
-    Kelas : {['$value'->kelas]}
+    <center>Daftar Costumer</center>
+    @foreach ($costumer as $data)
+    Nama Costumer : {{$data->code_costumer}}<br>
+    Nama Costumer : {{$data->name}}<br>
+    Nama Costumer : {{$data->email}}<br>
+    Nama Costumer : {{$data->county}}<br>
+    Nama Costumer : {{$data->nama_barang}}<br>
     <hr>
     @endforeach
 </body>
